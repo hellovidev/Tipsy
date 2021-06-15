@@ -61,7 +61,7 @@ class CalculatorViewController: UIViewController {
             let destinationVC = segue.destination as! ResultsViewController
             destinationVC.result = "\(result)"
             destinationVC.numberOfPeople = split
-            destinationVC.tip = "\(tip * 100)%"
+            destinationVC.tip = "\(Int(tip * 100))%"
         }
     }
     
